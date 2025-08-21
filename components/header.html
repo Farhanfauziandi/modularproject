@@ -1,1 +1,49 @@
+<!-- Komponen Header/Navigasi -->
+<!-- Dibuat dengan Tailwind CSS untuk styling dan responsivitas. -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-3">
+        <!-- Flex container untuk menyejajarkan item navigasi -->
+        <div class="flex justify-between items-center">
+            
+            <!-- Logo dan Nama Lembaga -->
+            <a href="/" class="flex items-center space-x-2">
+                <!-- Ganti dengan path logo Anda -->
+                <img src="https://placehold.co/40x40/0D47A1/FFFFFF?text=MHRC" alt="Logo MHRC" class="h-10 w-10">
+                <span class="text-xl font-bold text-brand-blue">MHRC</span>
+            </a>
+
+            <!-- Menu untuk Desktop (tersembunyi di mobile) -->
+            <!-- 'hidden md:flex' artinya: sembunyikan secara default, tampilkan sebagai flexbox di layar medium (md) ke atas. -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/" class="text-gray-700 hover:text-brand-light-blue">Beranda</a>
+                <a href="/pages/about.html" class="text-gray-700 hover:text-brand-light-blue">Tentang Kami</a>
+                <a href="/pages/research.html" class="text-gray-700 hover:text-brand-light-blue">Riset</a>
+                <a href="/pages/publication.html" class="text-gray-700 hover:text-brand-light-blue">Publikasi</a>
+                <a href="/pages/event.html" class="text-gray-700 hover:text-brand-light-blue">Acara</a>
+                <a href="/pages/contact.html" class="text-gray-700 hover:text-brand-light-blue">Kontak</a>
+            </div>
+
+            <!-- Tombol Hamburger untuk Mobile (tersembunyi di desktop) -->
+            <!-- 'md:hidden' artinya: tampilkan secara default, sembunyikan di layar medium (md) ke atas. -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Dropdown untuk Mobile -->
+        <!-- Awalnya disembunyikan dengan kelas 'hidden'. JavaScript akan mengaturnya. -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="/" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Beranda</a>
+            <a href="/pages/about.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Tentang Kami</a>
+            <a href="/pages/research.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Riset</a>
+            <a href="/pages/publication.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Publikasi</a>
+            <a href="/pages/event.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Acara</a>
+            <a href="/pages/contact.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-brand-gray">Kontak</a>
+        </div>
+    </div>
+</nav>
 

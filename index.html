@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Mental Health Research Community</title>
+    
+    <!-- Memuat Tailwind CSS dari CDN -->
+    <!-- Ini adalah cara termudah untuk menggunakan Tailwind tanpa perlu instalasi yang rumit. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Memuat file CSS kustom Anda -->
+    <!-- Gunakan file ini jika Anda ingin menambahkan gaya CSS yang tidak bisa dilakukan dengan Tailwind. -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Konfigurasi Kustom untuk Tailwind (Opsional) -->
+    <!-- Anda bisa menambahkan warna, font, dll. kustom di sini. -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#0D47A1',
+                        'brand-light-blue': '#1976D2',
+                        'brand-gray': '#F5F5F5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray font-sans">
+
+    <!-- 1. Header (Navigasi) -->
+    <!-- Konten header.html akan dimuat di sini oleh JavaScript. -->
+    <!-- Ini membuat kode lebih rapi karena navigasi dipisah di file sendiri. -->
+    <header id="header-placeholder"></header>
+
+    <!-- Bagian utama halaman -->
+    <main>
+        <!-- 2. Hero Section (Banner Utama) -->
+        <!-- Konten hero.html akan dimuat di sini. -->
+        <section id="hero-placeholder"></section>
+
+        <!-- 3. Konten Spesifik Halaman Beranda -->
+        <div class="container mx-auto px-6 py-12">
+            
+            <!-- Judul Bagian Riset Unggulan -->
+            <h2 class="text-3xl font-bold text-center text-brand-blue mb-8">Riset Unggulan Kami</h2>
+            
+            <!-- Kontainer untuk Kartu Riset -->
+            <!-- 'grid' dan 'gap-8' dari Tailwind digunakan untuk membuat layout kartu yang rapi. -->
+            <!-- 'md:grid-cols-2 lg:grid-cols-3' membuatnya responsif di berbagai ukuran layar. -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Contoh Kartu 1 -->
+                <!-- Ini adalah contoh penggunaan komponen kartu. Anda bisa mengganti datanya. -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/1976D2/FFFFFF?text=Riset+A" alt="Gambar Riset A" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brand-blue mb-2">Dampak Media Sosial pada Remaja</h3>
+                        <p class="text-gray-700 mb-4">Sebuah studi mendalam tentang bagaimana platform media sosial memengaruhi kesehatan mental generasi muda.</p>
+                        <a href="#" class="text-brand-light-blue hover:underline font-medium">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Contoh Kartu 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/0D47A1/FFFFFF?text=Riset+B" alt="Gambar Riset B" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brand-blue mb-2">Stigma dan Kesehatan Mental di Tempat Kerja</h3>
+                        <p class="text-gray-700 mb-4">Menganalisis tantangan dan solusi untuk menciptakan lingkungan kerja yang mendukung kesehatan mental.</p>
+                        <a href="#" class="text-brand-light-blue hover:underline font-medium">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Contoh Kartu 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/42A5F5/FFFFFF?text=Riset+C" alt="Gambar Riset C" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brand-blue mb-2">Terapi Digital: Inovasi Baru</h3>
+                        <p class="text-gray-700 mb-4">Menjelajahi efektivitas aplikasi dan platform online sebagai alat bantu terapi kesehatan jiwa.</p>
+                        <a href="#" class="text-brand-light-blue hover:underline font-medium">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 4. Footer -->
+    <!-- Konten footer.html akan dimuat di sini oleh JavaScript. -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Memuat file JavaScript utama -->
+    <!-- Diletakkan di akhir body agar halaman dimuat lebih cepat. -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
 
